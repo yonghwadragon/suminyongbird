@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Flappy Bird 게임</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    
+    <!-- 시작 화면 -->
+    <div id="startScreen" class="overlay">
+      <h1>Flappy Bird</h1>
+      <button id="startButton">시작하기</button>
+    </div>
+    
+    <!-- 게임 오버 화면 -->
+    <div id="gameOverScreen" class="overlay hidden">
+      <h1>게임 오버</h1>
+      <p>점수: <span id="finalScore">0</span></p>
+      <p>최고 점수: <span id="highScore">0</span></p>
+      <button id="restartButton">다시 시작</button>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>

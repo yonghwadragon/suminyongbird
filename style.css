@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  overflow: hidden; /* 스크롤바 제거 */
+  background: #70c5ce; /* 기본 배경색을 하늘색으로 설정 */
+}
+
+#gameContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  background: #70c5ce; /* 캔버스 배경색 (JavaScript에서 배경 이미지로 덮어씌움) */
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 반투명 검정 배경 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#startScreen h1, #gameOverScreen h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#startButton, #restartButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#startButton:hover, #restartButton:hover {
+  background-color: #45a049;
+}
+
+#gameOverScreen p {
+  color: white;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#gameOverScreen .highScore {
+  color: yellow;
+}
